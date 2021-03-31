@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/dashboard">Dashboard</router-link>
-    </div> -->
+    <Header/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
-<style>
+<script>
+  import Header from "./views/Header";
+  import Footer from "./views/Footer";
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Footer,
+
+    }
+  }
+
+</script>
+
+<style scoped>
 
 </style>

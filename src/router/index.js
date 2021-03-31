@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Dashboard from '../views/Dashboard.vue'
+
 
 Vue.use(VueRouter)
 
@@ -20,9 +20,16 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../views/About.vue')
     },
     {
-        path: '/dashboard',
-        name: 'Dashboard',
-        component: Dashboard
+        path: '/blog-page',
+        name: 'blogPage',
+        component: () =>
+            import ( /* webpackChunkName: "blogPage" */ '../views/BlogPage.vue')
+    },
+    {
+        path: '/category-product',
+        name: 'categoryProduct',
+        component: () =>
+            import ( /* webpackChunkName: "categoryProduct" */ '../views/CategoryProduct.vue')
     }
 ]
 
