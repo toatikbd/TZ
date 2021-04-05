@@ -432,8 +432,12 @@
 </template>
 
 <script>
+
     export default {
-        name: "HeaderMegamenu"
+        name: "HeaderMegamenu",
+        mounted() {
+            
+        }
     }
 </script>
 

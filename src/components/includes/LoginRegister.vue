@@ -20,5 +20,7 @@
 </script>
 
 <style scoped>
-
+    .middle-right{
+        margin-top: 30px;
+    }
 </style>
