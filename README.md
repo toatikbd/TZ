@@ -1,4 +1,5 @@
-# tz
+# eMarket eCommerce Website
+
 
 ## Project setup
 ```
@@ -19,6 +20,9 @@ npm run build
 ```
 npm run lint
 ```
+
+# eMarket Vue Cli  
+Version 0.1.0 = 12-04-2021
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
