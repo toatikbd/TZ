@@ -150,8 +150,15 @@
 </template>
 
 <script>
+
     export default {
-        name: "MainMenu"
+        name: "MainMenu",
+        mounted() {
+            // let mapScript = document.createElement('script')
+            // mapScript.setAttribute('src', 'http://192.168.1.27:8080/public/js/themejs/so_megamenu.js')
+            // document.head.appendChild(mapScript)
+            // L.map()
+        }
     }
 </script>
 

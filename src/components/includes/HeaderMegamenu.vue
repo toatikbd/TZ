@@ -436,7 +436,17 @@
     export default {
         name: "HeaderMegamenu",
         mounted() {
-            
+            // let mapScript = document.createElement('script')
+            // mapScript.setAttribute('src', 'http://192.168.1.27:8080/public/js/themejs/so_megamenu.js')
+            // document.head.appendChild(mapScript)
+            // L.map()
+            const plugin = document.createElement("script");
+            plugin.setAttribute(
+                "src",
+                "http://192.168.1.27:8080/public/js/themejs/so_megamenu.js"
+            );
+            plugin.async = true;
+            document.head.appendChild(plugin);
         }
     }
 </script>

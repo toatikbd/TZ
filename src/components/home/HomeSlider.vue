@@ -25,7 +25,62 @@
 
 <script>
     export default {
-        name: "HomeSlider"
+        name: "HomeSlider",
+        mounted() {
+            /* ---------------------------------------------------
+	Owl carousel - Slider
+-------------------------------------------------- */
+            // $(document).ready(function ($) {
+            //     "use strict";
+                // Content slider
+                $('.yt-content-slider').each(function () {
+                    var $slider = $(this),
+                        $panels = $slider.children('div'),
+                        data = $slider.data();
+                    // Remove unwanted br's
+                    //$slider.children(':not(.yt-content-slide)').remove();
+                    // Apply Owl Carousel
+
+                    $slider.owlCarousel2({
+                        responsiveClass: true,
+                        mouseDrag: true,
+                        video:true,
+                        lazyLoad: (data.lazyload == 'yes') ? true : false,
+                        autoplay: (data.autoplay == 'yes') ? true : false,
+                        autoHeight: (data.autoheight == 'yes') ? true : false,
+                        autoplayTimeout: data.delay * 1000,
+                        smartSpeed: data.speed * 1000,
+                        autoplayHoverPause: (data.hoverpause == 'yes') ? true : false,
+                        center: (data.center == 'yes') ? true : false,
+                        loop: (data.loop == 'yes') ? true : false,
+                        dots: (data.pagination == 'yes') ? true : false,
+                        nav: (data.arrows == 'yes') ? true : false,
+                        dotClass: "owl2-dot",
+                        dotsClass: "owl2-dots",
+                        margin: data.margin,
+                        navText: ['',''],
+
+                        responsive: {
+                            0: {
+                                items: data.items_column4
+                            },
+                            480: {
+                                items: data.items_column3
+                            },
+                            768: {
+                                items: data.items_column2
+                            },
+                            992: {
+                                items: data.items_column1
+                            },
+                            1200: {
+                                items: data.items_column0
+                            }
+                        }
+                    });
+                });
+            // });
+        }
     }
 </script>
 
