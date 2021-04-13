@@ -16,159 +16,23 @@
                             <div class="megamenu-pattern">
                                 <div class="container-mega">
                                     <ul class="megamenu" data-transition="slide" data-animationtime="250">
-                                        <li class="home hover">
-                                            <a href="index.html">Home <b class="caret"></b></a>
-                                            <div class="sub-menu" style="width:100%;" >
-                                                <div class="content" >
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <a href="index.html" class="image-link">
-                                                                            <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="image/catalog/menu/home-1.jpg" alt="">
-
-                                                                            </span>
-                                                                <h3 class="figcaption">Home page - (Default)</h3>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <a href="home2.html" class="image-link">
-                                                                            <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="image/catalog/menu/home-2.jpg" alt="">
-
-                                                                            </span>
-                                                                <h3 class="figcaption">Home page - Layout 2</h3>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <a href="home3.html" class="image-link">
-                                                                            <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="image/catalog/menu/home-3.jpg" alt="">
-
-                                                                            </span>
-                                                                <h3 class="figcaption">Home page - Layout 3</h3>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <a href="home4.html" class="image-link">
-                                                                            <span class="thumbnail">
-                                                                                <img class="img-responsive img-border" src="image/catalog/menu/home-4.jpg" alt="">
-
-                                                                            </span>
-                                                                <h3 class="figcaption">Home page - Layout 4</h3>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <!-- <div class="col-md-15">
-                                                            <a href="#" class="image-link">
-                                                                <span class="thumbnail">
-                                                                    <img class="img-responsive img-border" src="image/demo/feature/comming-soon.png" alt="">
-
-                                                                </span>
-                                                                <h3 class="figcaption">Comming soon</h3>
-                                                            </a>
-
-                                                        </div> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="with-sub-menu hover">
+                                        <li class="">
                                             <p class="close-menu"></p>
-                                            <a href="#" class="clearfix">
+                                            <router-link to="/" class="clearfix">
+                                                <strong>Home</strong>
+                                            </router-link>
+                                        </li>
+                                        <li class="">
+                                            <p class="close-menu"></p>
+                                            <router-link to="/" class="clearfix">
                                                 <strong>Features</strong>
-                                                <img class="label-hot" src="image/catalog/menu/new-icon.png" alt="icon items">
-                                                <b class="caret"></b>
-                                            </a>
-                                            <div class="sub-menu" style="width: 100%; right: auto;">
-                                                <div class="content" >
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <div class="column">
-                                                                <a href="#" class="title-submenu">Listing pages</a>
-                                                                <div>
-                                                                    <ul class="row-list">
-                                                                        <li><a href="category.html">Category Page 1 </a></li>
-                                                                        <li><a href="category-v2.html">Category Page 2</a></li>
-                                                                        <li><a href="category-v3.html">Category Page 3</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="column">
-                                                                <a href="#" class="title-submenu">Product pages</a>
-                                                                <div>
-                                                                    <ul class="row-list">
-                                                                        <li><a href="product.html">Product page 1</a></li>
-                                                                        <li><a href="product-v2.html">Product page 2</a></li>
-                                                                        <!-- <li><a href="product-v3.html">Image size - small</a></li> -->
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="column">
-                                                                <a href="#" class="title-submenu">Shopping pages</a>
-                                                                <div>
-                                                                    <ul class="row-list">
-                                                                        <li><a href="cart.html">Shopping Cart Page</a></li>
-                                                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                                                        <li><a href="compare.html">Compare Page</a></li>
-                                                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="column">
-                                                                <a href="#" class="title-submenu">My Account pages</a>
-                                                                <div>
-                                                                    <ul class="row-list">
-                                                                        <li><a href="login.html">Login Page</a></li>
-                                                                        <li><a href="register.html">Register Page</a></li>
-                                                                        <li><a href="my-account.html">My Account</a></li>
-                                                                        <li><a href="order-history.html">Order History</a></li>
-                                                                        <li><a href="order-information.html">Order Information</a></li>
-                                                                        <li><a href="return.html">Product Returns</a></li>
-                                                                        <li><a href="gift-voucher.html">Gift Voucher</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </router-link>
                                         </li>
-                                        <li class="with-sub-menu hover">
+                                        <li class="">
                                             <p class="close-menu"></p>
-                                            <a href="#" class="clearfix">
+                                            <router-link to="/" class="clearfix">
                                                 <strong>Pages</strong>
-                                                <b class="caret"></b>
-                                            </a>
-                                            <div class="sub-menu" style="width: 40%; ">
-                                                <div class="content" >
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <ul class="row-list">
-                                                                <li><a class="subcategory_item" href="faq.html">FAQ</a></li>
-
-                                                                <li><a class="subcategory_item" href="sitemap.html">Site Map</a></li>
-                                                                <li><a class="subcategory_item" href="contact.html">Contact us</a></li>
-                                                                <li><a class="subcategory_item" href="banner-effect.html">Banner Effect</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <ul class="row-list">
-                                                                <li><a class="subcategory_item" href="about-us.html">About Us 1</a></li>
-                                                                <li><a class="subcategory_item" href="about-us-2.html">About Us 2</a></li>
-                                                                <li><a class="subcategory_item" href="about-us-3.html">About Us 3</a></li>
-                                                                <li><a class="subcategory_item" href="about-us-4.html">About Us 4</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </router-link>
                                         </li>
                                         <li class="with-sub-menu hover">
                                             <p class="close-menu"></p>
