@@ -440,13 +440,34 @@
             // mapScript.setAttribute('src', 'http://192.168.1.27:8080/public/js/themejs/so_megamenu.js')
             // document.head.appendChild(mapScript)
             // L.map()
-            const plugin = document.createElement("script");
-            plugin.setAttribute(
-                "src",
-                "http://192.168.1.27:8080/public/js/themejs/so_megamenu.js"
-            );
-            plugin.async = true;
-            document.head.appendChild(plugin);
+            // const plugin = document.createElement("script");
+            // plugin.setAttribute(
+            //     "src",
+            //     "http://192.168.1.27:8080/public/js/themejs/so_megamenu.js"
+            // );
+            // plugin.async = true;
+            // document.head.appendChild(plugin);
+            $("#show-megamenu").click(function () {
+                if($('.megamenu-wrapper').hasClass('so-megamenu-active'))
+                    $('.megamenu-wrapper').removeClass('so-megamenu-active');
+                else
+                    $('.megamenu-wrapper').addClass('so-megamenu-active');
+            });
+            $('#remove-megamenu').click(function() {
+                $('.megamenu-wrapper').removeClass('so-megamenu-active');
+                return false;
+            });
+
+            $("#show-verticalmenu").click(function () {
+                if($('.vertical-wrapper').hasClass('so-vertical-active'))
+                    $('.vertical-wrapper').removeClass('so-vertical-active');
+                else
+                    $('.vertical-wrapper').addClass('so-vertical-active');
+            });
+            $('#remove-verticalmenu').click(function() {
+                $('.vertical-wrapper').removeClass('so-vertical-active');
+                return false;
+            });
         }
     }
 </script>
